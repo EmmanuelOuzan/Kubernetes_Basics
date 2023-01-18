@@ -1,0 +1,14 @@
+# Worker .Net that converts between the data of redis
+# to postgres
+apiVersion: v1
+kind: Pod
+metadata:
+  name: worker-app-pod
+  labels:
+    name: worker-app-pod
+    app: demo-voting-app
+spec:
+  containers:
+    - name: worker-app
+      image: kodekloud/examplevotingapp_worker:v1
+      imagePullPolicy: Always
