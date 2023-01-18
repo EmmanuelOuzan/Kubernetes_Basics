@@ -1,5 +1,5 @@
 
-*****Hello Everyone**
+***Hello Everyone
 This is my first kubernetes project
 Creation of :
 Pods, Services & Deployments.
