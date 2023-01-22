@@ -1,11 +1,11 @@
+# Kubernetes Deplyoment of a voting app 
+## Vote for cats or dogs with a full kubernetes app from scratch.
+### Creation of : Pods, Services & Deployments
 
-***Hello Everyone
-This is my first kubernetes project
-Creation of :
-Pods, Services & Deployments.
 I have created an app composed of 5 pods.
-This is a voting app. 
+
 You should vote if you prefer dogs or cat, and it should output the result.
+
 Pods that have been deployed:
 1. voting-app
 2. Redis
@@ -14,8 +14,11 @@ Pods that have been deployed:
 5. Result-app
 
 Services created:
-redis-service : ClusterIP (To talk with the cluster)
+redis-service : ClusterIP 
+(To communicate with the cluster)
 Postgres-service : ClusterIP
-Two NodePorts:
-1. for accesing the Voting-app on port 80
-2. for accesing the results-app on port 80
+Two LoadBalancer:
+1. Accesing the Voting-app on port 80
+2. Accesing the results-app on port 80
+
+![image](https://user-images.githubusercontent.com/8169459/213927201-4f886890-9c09-4137-9f5f-0390528918f0.png)
